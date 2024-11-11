@@ -1,0 +1,155 @@
+/* التصميم الأساسي */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #242424;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #851621;
+  margin-bottom: 50px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.header p {
+  color: #a6a6a6;
+  font-size: 1.2rem;
+}
+
+
+.typing_form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_wrpper {
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+}
+
+.typing_input {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #383838;
+  color: #e3e3e3;
+  font-size: 1rem;
+  outline: none;
+}
+
+.typing_form button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #e3e3e3;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.chat_list {
+
+  margin-top: 60px;
+  padding-bottom: 120px;
+}
+.chat_list:hover i{
+  color: #a6a6a6;
+}
+.message {
+  margin-bottom: 20px; 
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message.incoming {
+  margin-top: 20px;
+  background-color: #2e2e2e;
+}
+
+.message.outgoing {
+  background-color: #383838;
+}
+
+
+.message_content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message_content img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message .text {
+  color: #e3e3e3;
+}
+i{
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .typing_input {
+    font-size: 0.9rem;
+    padding: 12px 40px 12px 15px;
+  }
+
+  .typing_form button {
+    font-size: 1.2rem;
+  }
+
+  .message_content img {
+    width: 30px;
+    height: 30px;
+  }
+}
