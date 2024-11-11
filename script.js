@@ -6,7 +6,6 @@ const  API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro
 
 const genrateAPIResponse = async (div)=>{
   const textElement = div. querySelector('.text');
-  loadingPage.classList.remove("hidden"); // إظهار شاشة التحميل
 
   try{
     const response = await fetch(API_URL ,{
